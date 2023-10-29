@@ -1,3 +1,4 @@
+
 # aba7568.github.io
 # Arch Install
 
@@ -140,12 +141,12 @@ usermod -aG wheel,audio,video,storage team
 ``````
 ## Installing a DE
 I Choose GNOME 
-- install the x enviroment and then GNOME
+- install the x environment and then GNOME
 ``````bash
 pacman -S xorg networkmanager
 pacman -S gnome
 ``````
-- enabling the netowrk manager 
+- enabling the network manager 
 ``````bash
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
@@ -153,7 +154,7 @@ systemctl enable NetworkManager.service
 
 ## Finishing Up
 - exit chroot
-- unmount root parition 
+- unmount root partition 
 - reboot
 ``````bash
 exit
@@ -161,8 +162,9 @@ umount -l /mnt # Had an issue here first tried umount /mnt did not work until i 
 reboot
 ``````
 
-## Installing a Differnt Shell
+## Installing a Different Shell
 ``````bash
 echo $SHELL # to see what shell is being used 
 sudo pacman -S zsh # install
 cat /etc/shells # to list all the shells
+``````
