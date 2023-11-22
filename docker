@@ -1,0 +1,18 @@
+## Downloading Docker
+``````bash
+sudo apt-get update
+sudo apt-get upgrade 
+sudo apt-get install docker.io
+sudo service docker status # Make sure docker is actually running 
+``````
+## install Docker container 
+``````bash
+sudo docker run -d -p 443:443 --name openvas mikesplain/openvas
+``````
+## Acessing Openvas
+- Open firefox 
+- go to: https://localhost
+- username and password: admin
+
+## Running a Scan
+-  create a target -> run scan 
